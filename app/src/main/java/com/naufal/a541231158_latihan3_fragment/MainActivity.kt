@@ -71,6 +71,12 @@ class MainActivity : AppCompatActivity() {
                     intent.data = Uri.parse("tel:" + phoneNumber)
                     startActivity(intent)
                 }
+
+                btnFragment.setOnClickListener{
+                    val intent = Intent(this@MainActivity, KirimFragment::class.java)
+                    startActivity(intent)
+                }
+
                 val moveWithDataIntent = Intent(this@MainActivity, Fragment::class.java)
                 moveWithDataIntent.putExtra(Fragment.EXTRA_PRODI, namaProdi)
                 startActivity(moveWithDataIntent)

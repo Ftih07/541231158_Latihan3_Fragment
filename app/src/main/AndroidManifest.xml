@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
@@ -13,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._541231158_Latihan3_Fragment"
         tools:targetApi="31">
+        <activity
+            android:name=".KirimFragment"
+            android:exported="false" />
         <activity
             android:name=".Fragment"
             android:exported="false" />
